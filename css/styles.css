@@ -3381,14 +3381,14 @@ td:last-child {
 .s-intro__content-pretitle {
   font-weight: 600;
   margin-bottom: var(--vspace-0_125);
-  color: var(--color-1);
+  color: var(--color-black);
 }
 
 .s-intro__content-title {
   font-size: clamp(3.8rem, 4.8vw, 8.8rem);
   line-height: 1.045;
   letter-spacing: -0.025em;
-  margin-top: 0;
+  margin-top: var(--vspace-1_25);
   margin-bottom: var(--vspace-1_25);
 }
 
@@ -3712,6 +3712,9 @@ td:last-child {
 }
 
 @media screen and (max-width: 1080px) {
+  .s-intro__content-pretitle {
+    color: var(--color-white);
+  }
   .s-intro {
     --content-padding-top: max(12rem, 16vh);
     --content-padding-bottom: 9.6rem;
