@@ -4206,6 +4206,10 @@ td:last-child {
   color: white;
 }
 
+.s-footer__about {
+  padding-top: var(--vspace-0_25);
+}
+
 .s-footer__about > * {
   width: min(100%, 560px);
 }
@@ -4424,4 +4428,29 @@ td:last-child {
   .ss-go-top {
     right: -2rem;
   }
+}
+
+.s-about {
+  padding-top: var(--vspace-7);
+  color: var(--color-3);
+}
+
+/* --------------------------------------------------------------------
+ * ## cert blocks
+ * -------------------------------------------------------------------- */
+.s-cert__block-title {
+  margin-bottom: var(--vspace-1);
+  padding-left: 1.45rem;
+  position: relative;
+}
+
+.s-cert__block-title::before {
+  content: "";
+  height: 0.7em;
+  width: 3px;
+  background-color: var(--color-1);
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  top: 50%;
 }
